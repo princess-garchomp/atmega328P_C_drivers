@@ -15,6 +15,13 @@ void _16_bit_tiemr1_config(){
 	 //here we set the frequency by changing the value of N
 }
 
+void tiemr_1_OCRA1_set(uint16_t data){
+	OCR1A = data;
+}
+void tiemr_1_OCRB1_set(uint16_t data){
+	OCR1B = data;	
+}
+
 //ISRTIMER1_COMPA_vect){on led;}
 
 //ISR(TIMER1_COMPB_vect){led off;}
